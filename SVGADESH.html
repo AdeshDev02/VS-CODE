@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            background: #f8fc04;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        svg{
+            width: 80%;
+        }
+        @keyframes stroke {
+            100%{
+                stroke-dashoffset: -400;
+            }
+        }
+        .text{
+            font: 5em/1 "Montserrat", "Open Sans", "Tahoma";
+            text-transform: uppercase;
+            stroke-width: 3;
+            stroke-linejoin: round;
+            stroke-dasharray: 70 330;
+            stroke-dashoffset: 0;
+            animation: stroke 6s infinite linear;
+            fill: none;
+            
+            &:nth-child(5n+1) {
+                stroke: #fc0431;
+                animation-delay: -1.2s;
+            }
+            &:nth-child(5n+2) {
+                stroke: #f5a503;
+                animation-delay: -2.4s;
+            }
+            &:nth-child(5n+3) {
+                stroke: #fd048d;
+                animation-delay: -3.6s;
+            }
+            &:nth-child(5n+4) {
+                stroke: #c206fc;
+                animation-delay: -4.8s;
+            }
+            &:nth-child(5n+5) {
+                stroke: #03daf7;
+                animation-delay: -6s;
+            }
+        }
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 800 300">
+        <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="50%" dy=".35rem">ADESH DESIGN</text>
+        </symbol>
+        <use class="text" xlink:href="#s-text"></use>
+        <use class="text" xlink:href="#s-text"></use>
+        <use class="text" xlink:href="#s-text"></use>
+        <use class="text" xlink:href="#s-text"></use>
+        <use class="text" xlink:href="#s-text"></use>
+    </svg>
+</body>
+</html>

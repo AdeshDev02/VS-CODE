@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBT QUESTION</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: linear-gradient(to right, #c471ed, #12c2e9, #c471ed, #f64f59);
+        }
+        #welcome{
+            font-size: 60px;
+            font-weight: 500px;
+            margin-left: 300px;
+            /* margin-top: 50px; */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 70px;
+            color: #ffff;
+            outline-style: double auto;
+        }
+        #bb{
+            color: aqua;
+            font-size: 30px;
+            margin-left: 450px;
+        }
+        #loginBtn{
+            border-radius: 45px;
+            height: 45px;
+            width: 15%;
+            margin-top: 20px;
+            background-color: purple;
+            color: #ffff;
+        }
+        #subjects{
+            height: 30px;
+            width: 40%;
+            display: none;
+            margin-top: 40px;
+            background-color: #12c2e9;
+            color: #ffff;
+        }
+        #centr{
+            height: 250px;
+            background-color: #e912e9;
+            margin-left: 80px;
+            margin-right: 80px;
+            border-radius: 30px;
+            border-style: groove;
+            box-sizing: border-box;
+            display: none;
+            margin-top: 150px;
+
+        }
+        #first{
+            display: none;
+            margin-top: 150px;
+            background-color: #e912e9;
+            height: 250px;
+            margin-left: 80px;
+            margin-right: 80px;
+            padding-left: 30px;
+            border-radius: 30px;
+            box-sizing: border-box;
+            border-style: groove;
+        }
+        .nxt{
+            color: black;
+            background-color: gold;
+            border-radius: 3px;
+        }
+        #two{
+            display: none;
+        }
+        #three{
+            display: none;
+        }
+        #second{
+            display: none;
+            margin-top: 150px;
+            background-color: #e912e9;
+            height: 250px;
+            margin-left: 80px;
+            margin-right: 80px;
+            padding-left: 30px;
+            border-radius: 30px;
+            box-sizing: border-box;
+            border-style: groove;
+        }
+        #bio{
+            display: none;
+        }
+        #logy{
+            display: none;
+        }
+        #brain{
+            display: none;
+        }
+        #third{
+            display: none;
+            margin-top: 150px;
+            background-color: #e912e9;
+            height: 250px;
+            margin-left: 80px;
+            margin-right: 80px;
+            padding-left: 30px;
+            border-radius: 30px;
+            box-sizing: border-box;
+            border-style: groove;
+        }
+        #john{
+            display: none;
+        }
+        #sarah{
+            display: none;
+        }
+        #nathan{
+            display: none;
+        }
+        #fourth{
+            display: none;
+            margin-top: 150px;
+            background-color: #e912e9;
+            height: 250px;
+            margin-left: 80px;
+            margin-right: 80px;
+            padding-left: 30px;
+            border-radius: 30px;
+            box-sizing: border-box;
+            border-style: groove;
+        }
+        #honesty{
+            display: none;
+        }
+        #disclipline{
+            display: none;
+        }
+        #abuse{
+            display: none;
+        }
+        #hh{
+            display: none;
+            margin-top: 150px;
+            background-color: #e912e9;
+            height: 250px;
+            margin-left: 80px;
+            margin-right: 80px;
+            padding-left: 30px;
+            border-radius: 30px;
+            box-sizing: border-box;
+            border-style: groove;
+        }
+    </style>
+</head>
+<body>
+    <div id="row">
+        <div class="column">
+            <h4 id="welcome">LASU CBT TEST</h4>
+            <p id="smallcon" style="font-size: 16px; font-family:sans-serif; margin-left: 425px; color: gold; margin-bottom: 90px;">KINDLY ENTER YOUR USERNAME</p>
+        </div>
+        <div id="login" style="margin-left: 425px;"><br>
+        <div>
+            <input type="text" id="userName" placeholder="Username" autofocus="true" style="width: 40%; height: 100%;">
+        </div>
+    </div>
+    <div class="submit">
+        <input type="submit" id="loginBtn" class="buttons" value="START EXAM" style="margin-left: 480px;">
+    </div>
+    <div class="warning">
+        <small id="userwarning" style="color: rgb(219, 193, 21);" class="">
+
+        </small>
+        </div>
+    </div>
+
+    <center id="centr">
+        <select name="Subject" id="subjects" onchange="ab()">
+            <option value="">Select a subject</option>
+            <option value="English Language">English Language</option>
+            <option value="Biology">Biology</option>
+            <option value="CRK">CRK</option>
+            <option value="Civic Education">Civic Education</option>
+        </select>
+    </center>
+
+    <div id="first">
+        <p>English Language</p>
+        <p id="quest">1. What is s verb<br>
+        <input type="radio" name="rd" id="rd1" value="one" class="inn">A: an action word<br>
+        <input type="radio" name="rd" id="rd2" value="two" class="inn">B: a word that can function as a noun phrase<br>
+        <input type="radio" name="rd" id="rd3" value="one" class="inn">C: a word naming an attribute of a noun<br>
+
+        <input type="button" value="NEXT" id="nxt" class="nxt">
+        </p>
+        <p id="two">2. A Noun is............<br>
+            <input type="radio" name="rd" id="rd4" value="four" class="side">A: an action word<br>
+            <input type="radio" name="rd" id="rd5" value="five" class="side">B: A naming word<br>
+            <input type="radio" name="rd" id="rd6" value="six" class="side">C: a word naming an attribute of a verb<br>
+
+            <input type="button" value="PREVIOUS" id="prev" class="nxt">
+            <input type="button" value="NEXT" id="net" class="nxt">
+        </p>
+        <p id="three">3. Ali goes to the stadium regularly...........<br>
+            <input type="radio" name="rd" id="rd7" value="seven" class="cow">A: didn't he<br>
+            <input type="radio" name="rd" id="rd8" value="eight" class="cow">B: did he<br>
+            <input type="radio" name="rd" id="rd9" value="nine" class="cow">C: doesn't he<br>
+
+            <input type="button" value="PREVIOUS" id="prevv" class="nxt">
+            <input type="button" value="NEXT" id="nxxt" class="nxt">
+        </p>
+    </div>
+    <div id="second">
+        <p>Biology</p>
+        <p id="bio">1. Which of this is direct photosynthensis product<br>
+        <input type="radio" name="rd" id="rd10" value="ten" class="boy">A: Glucose<br>
+        <input type="radio" name="rd" id="rd11" value="eleven" class="boy">B: Starch<br>
+        <input type="radio" name="rd" id="rd12" value="twelve" class="boy">C: protein<br>
+
+        <input type="button" value="PREVIOUS" id="priv" class="nxt">
+        <input type="button" value="NEXT" id="newt">
+        </p>
+        <p id="logy">2. All Living Organism<br>
+            <input type="radio" name="rd" id="rd13" value="thirteen" class="gal">A: photosynthensis<br>
+            <input type="radio" name="rd" id="rd14" value="fourteen" class="gal">B: Respire<br>
+            <input type="radio" name="rd" id="rd15" value="fifteen" class="gal">C: Move<br>
+
+            <input type="button" value="PREVIOUS" id="privv" class="nxt">
+            <input type="button" value="NEXT" id="neet" class="nxt">
+        </p>
+        <p id="brain">3. Which of these is not type of soil<br>
+            <input type="radio" name="rd" id="rd16" value="sixteen" class="cat">A: Clay<br>
+            <input type="radio" name="rd" id="rd17" value="seventeen" class="cat">B: Loamy<br>
+            <input type="radio" name="rd" id="rd18" value="eighteen" class="cat">C: Granite<br>
+
+            <input type="button" value="PREVIOUS" id="prrvv" class="nxt">
+            <input type="button" value="NEXT" id="nxext" class="nxt">
+        </p>
+    </div>
+    <div id="third">
+        <p>CRK</p>
+        <p id="john">1. Acording to the gospel of john, Jesus is the vine while the vine dresser<br>
+        <input type="radio" name="rd" id="rd19" value="ninteen" class="dog">A: The Holy Spirit<br>
+        <input type="radio" name="rd" id="rd20" value="twenty" class="dog">B: His Father<br>
+        <input type="radio" name="rd" id="rd21" value="twentone" class="dog">C: His Mother<br>
+
+        <input type="button" value="PREVIOUS" id="partt" class="nxt">
+        <input type="button" value="NEXT" id="nightt" class="nxt">
+        </p>
+        <p id="sarah">2. According to Galathains, the Law was added because of<br>
+            <input type="radio" name="rd" id="rd22" value="twenttwo" class="kil">A: Righteousness<br>
+            <input type="radio" name="rd" id="rd23" value="twentthr" class="kil">B: Grace<br>
+            <input type="radio" name="rd" id="rd24" value="twentfour" class="kil">C: Transgresion<br>
+
+            <input type="button" value="PREVIOUS" id="parr" class="nxt">
+            <input type="button" value="NEXT" id="neighh" class="nxt">
+        </p>
+        <p id="nathan">3. Namans was transferred to Gehazi because Gahazi was<br>
+            <input type="radio" name="rd" id="rd25" value="twentfif" class="iff">A: Ambitious<br>
+            <input type="radio" name="rd" id="rd26" value="twentsix" class="iff">B: Anxious<br>
+            <input type="radio" name="rd" id="rd27" value="twentsev" class="iff">C: Covetous<br>
+
+            <input type="button" value="PREVIOUS" id="pasta" class="nxt">
+            <input type="button" value="NEXT" id="nickel" class="nxt">
+        </p>
+    </div>
+    <div id="fourth">
+            <p>Civic Education</p>
+            <p id="honesty">1. An attribute of honesty<br>
+            <input type="radio" name="rd" id="rd28" value="twenteig" class="dov">A: tolerance<br>
+            <input type="radio" name="rd" id="rd29" value="twentnin" class="dov">B: justice<br>
+            <input type="radio" name="rd" id="rd30" value="thirty" class="dov">C: liberty
+
+
+            <input type="button" value="PREVIOUS" id="hnst" class="nxt">
+            <input type="button" value="NEXT" id="nosrty" class="nxt">
+            </p>
+            <p id="disclipline">2. discliplines described<br>
+                <input type="radio" name="rd" id="rd31" value="thirtone" class="eff">A: ability to show hospitality<br>
+                <input type="radio" name="rd" id="rd32" value="thirttwo" class="eff">B: tendency to fight<br>
+                <input type="radio" name="rd" id="rd33" value="thirtthr" class="eff">C: state or quality of being bravery<br>
+    
+                <input type="button" value="PREVIOUS" id="dis" class="nxt">
+                <input type="button" value="NEXT" id="pline" class="nxt">
+            </p>
+            <p id="abuse">3. A common repercusion of drug abuse<br>
+                <input type="radio" name="rd" id="rd34" value="thirtfour" class="fuk">A: medication<br>
+                <input type="radio" name="rd" id="rd35" value="thirtfif" class="fuk">B: rehabilitation<br>
+                <input type="radio" name="rd" id="rd36" value="thirtsix" class="fuk">C: brain drain<br>
+    
+                <input type="button" value="PREVIOUS" id="pruvv" class="nxt">
+                <input type="button" value="SUBMIT" id="naxxt" class="nxt">
+            </p>
+    </div>
+    <h1 id="hh">
+        <center>Score :</center>
+    </h1>
+
+
+
+
+    <script>
+        var user = document.getElementById('userName')
+        var log = document.getElementById('loginBtn')
+        var row = document.getElementById('row')
+        var centr = document.getElementById('centr')
+        var sub = document.getElementById('subjects')
+        var first = document.getElementById('first')
+        var quest = document.getElementById('quest')
+        var next = document.getElementById('nxt')
+        var prev = document.getElementById('prev')
+        var two = document.getElementById('two')
+
+        function ab() {
+            
+        }
+
+        loginBtn.addEventListener('click', function bb() {
+            if (user.value == "") {
+                alert("Input your username")
+                
+            }else{
+                row.style.display = "none"
+                subjects.style.display = "block"
+                centr.style.display = "block"
+            }
+            
+        })
+
+        function ab() {
+            if (sub.value == "English Language") {
+                centr.style.display = "none"
+                first.style.display = "block"
+            } else if(sub.value == "Biology") {
+                centr.style.display = "none"
+                second.style.display = "block" 
+            }
+            if (sub.value == "CRK") {
+                centr.style.display = "none"
+                third.style.display = "block"
+            } else if (sub.value == "Civic Education") {
+                centr.style.display = "none"
+                fourth.style.display = "block"  
+            } 
+
+            }
+            nxt.addEventListener('click', function on() {
+                quest.style.display = "none"
+                two.style.display = "block"  
+            })
+            prev.addEventListener('click', function ss() {
+                two.style.display = "none"
+                quest.style.display = "block"  
+            })
+            net.addEventListener('click', function dd() {
+                two.style.display = "none"
+                three.style.display = "block"  
+            })
+            prevv.addEventListener('click', function pv() {
+                three.style.display = "none"
+                two.style.display = "block"  
+            })
+            nxxt.addEventListener('click', function tx() {
+                three.style.display = "none"
+                bio.style.display = "block"  
+            })
+            priv.addEventListener('click', function iv() {
+                bio.style.display = "none"
+                three.style.display = "block"  
+            })
+            priv.addEventListener('click', function priv() {
+                bio.style.display = "none"
+                logy.style.display = "block"  
+            })
+            newt.addEventListener('click', function nt() {
+                logy.style.display = "none"
+                bio.style.display = "block"  
+            })
+            privv.addEventListener('click', function pr() {
+                logy.style.display = "none"
+                brain.style.display = "block"  
+            })
+            neet.addEventListener('click', function net() {
+                brain.style.display = "none"
+                logy.style.display = "block"  
+            })
+            partt.addEventListener('click', function prt() {
+                john.style.display = "none"
+                sarah.style.display = "block"  
+            })
+            nightt.addEventListener('click', function nig() {
+                sarah.style.display = "none"
+                john.style.display = "block"  
+            })
+            parr.addEventListener('click', function pr() {
+                sarah.style.display = "none"
+                nathan.style.display = "block"  
+            })
+            neighh.addEventListener('click', function ngh() {
+                nathan.style.display = "none"
+                sarah.style.display = "block"  
+            })
+            hnst.addEventListener('click', function hns() {
+                honesty.style.display = "none"
+                disclipline.style.display = "block"  
+            })
+            norsty.addEventListener('click', function nrst() {
+                disclipline.style.display = "none"
+                honesty.style.display = "block"  
+            })
+            dis.addEventListener('click', function ds() {
+                disclipline.style.display = "none"
+                abuse.style.display = "block"  
+            })
+            pline.addEventListener('click', function pl() {
+                abuse.style.display = "none"
+                disclipline.style.display = "block"  
+            })
+
+            var all_in = Array.from(document.getEle('inn'));
+            //  var all = Array.from(document.getClassName('side'));
+               let hh = document.getElementById('hh')
+
+               var i = 0
+               hh.innerHTML = "Score : $(i)"
+               // console.log(all_in[1])
+
+               all_in.map(
+                function (obi) {
+                    obi.onclick=()=>{
+                        if (obi.value == "one") {
+                            i++
+                            hh.innerHTML = 'Score : $(i)'
+                        } else{
+                            i--
+                            hh.innerHTML = 'Score : $(i)'                            
+                        }
+                    }   
+                }
+               )
+
+               var all = Array.from(document.getElementsByClassName('side'));
+
+               all.map(
+                function (ada) {
+                    ada.onclick=()=>{
+                        if (ada.value == "five") {
+                            i++
+                            hh.innerHTML = 'Score : $(i)'
+                        } else{
+                            i--
+                            hh.innerHTML = 'Score : $(i)'
+                            
+                        }
+                    }
+                }
+               )
+
+               var ore = Array.from(document.getElementsByClassName('cow'));
+
+               ore.map(
+                function (musty) {
+                    musty.onclick=()=>{
+                        if (musty.value == "seven") {
+                            i++
+                        hh.innerHTML = 'Score : $(i)'
+                    } else{
+                        i--
+                        hh.innerHTML = 'Score : $(i)'
+             
+                    }
+                }
+            }
+        )
+        var twel = Array.from(document.getElementsByClassName('boy'));
+
+        twel.map(
+            function (napa) {
+                napa.onclick=()=>{
+                    if (napa.value == "twelve") {
+                        i++
+                    hh.innerHTML = 'Score : $(i)'
+                } else{
+                        i--
+                        hh.innerHTML = 'Score : $(i)'
+             
+                }
+            }
+        }
+    )
+    var fif = Array.from(document.getElementsByClassName('gal'));
+
+    fif.map(
+        function (ada) {
+            ada.onclick=()=>{
+                if (ada.value == "fifteen") {
+                        i++
+                        hh.innerHTML = 'Score : $(i)'
+                } else{
+                        i--
+                        hh.innerHTML = 'Score : $(i)'
+                            
+                }
+            }
+        }
+    )
+    var eig = Array.from(document.getElementsByClassName('cat'));
+
+    eig.map(
+        function (hods) {
+            hods.onclick=()=>{
+                if (ada.value == "eighteen") {
+                        i++
+                        hh.innerHTML = 'Score : $(i)'
+                } else{
+                        i--
+                        hh.innerHTML = 'Score : $(i)'
+             
+                }
+            }
+        }
+    )
+    var nin = Array.from(document.getElementsByClassName('dog'));
+
+    nin.map(
+        function (nie) {
+            nie.onclick=()=>{
+                if (ada.value == "ninteen") {
+                        i++
+                        hh.innerHTML = 'Score : $(i)'
+                } else{
+                        i--
+                        hh.innerHTML = 'Score : $(i)'
+             
+                }
+            }
+        }
+    )
+    var twenthw = Array.from(document.getElementsByClassName('kil'));
+
+    twenthw.map(
+        function (thw) {
+            thw.onclick=()=>{
+                if (ada.value == "twenttwo") {
+                        i++
+                        hh.innerHTML = 'Score : $(i)'
+                } else{
+                        i--
+                        hh.innerHTML = 'Score : $(i)'
+             
+                }
+            }
+        }
+    )
+    var twtfif = Array.from(document.getElementsByClassName('iff'));
+
+    twtfif.map(
+        function (fif) {
+            fif.onclick=()=>{
+                if (ada.value == "twentfif") {
+                        i++
+                        hh.innerHTML = 'Score : $(i)'
+                } else{
+                        i--
+                        hh.innerHTML = 'Score : $(i)'
+                            
+                }
+            }
+        }
+    )
+    var eigy = Array.from(document.getElementsByClassName('dov'));
+
+    eigy.map(
+     function (mick) {
+            mick.onclick=()=>{
+                if (ada.value == "twenteig") {
+                        i++
+                        hh.innerHTML = 'Score : $(i)'
+                } else{
+                        i--
+                        hh.innerHTML = 'Score : $(i)'
+             
+                }
+            }
+        }
+    )
+    var ffo = Array.from(document.getElementsByClassName('eff'));
+
+    ffo.map(
+     function (fof) {
+            fof.onclick=()=>{
+                if (ada.value == "thirtone") {
+                        i++
+                        hh.innerHTML = 'Score : $(i)'
+                } else{
+                        i--
+                        hh.innerHTML = 'Score : $(i)'
+             
+                }
+            }
+        }
+    )
+    var nape = Array.from(document.getElementsByClassName('fuk'));
+
+    nape.map(
+     function (fud) {
+            fud.onclick=()=>{
+                if (ada.value == "thirtsix") {
+                        i++
+                        hh.innerHTML = 'Score : $(i)'
+                } else{
+                        i--
+                        hh.innerHTML = 'Score : $(i)'
+             
+                }
+            }
+        }
+    )
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC JS</title>
+    <style>
+        #Adesh{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+        }
+        #Adesh section{
+            display: flex;
+            flex-direction: column;
+        }
+        .lasu{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 10px;
+            color: rgb(53, 255, 2);
+        }
+        #gf{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <center>
+            <!-- <h2 class="lasu">LAGOS STATE UNIVERSITY</h2> -->
+        </center>
+    </div>
+    <hr>
+
+    <div  id="Adesh">
+        <section>
+            <small id="gf">Item</small>
+            <span>
+                <input type="checkbox" name="" value="" id="ft">Football
+            </span>
+        </section>
+        <section>
+            <small>Quantity</small>
+            <input type="text" name="" value="" id="qty" oninput="obi()">
+        </section>  
+        <section>
+            <small>Price</small>
+            <input type="text" name="" value="" id="price" disabled>
+        </section>     
+        <section>
+            <small>Cost</small>
+            <input type="text" name="" value="" id="ct" disabled>
+        </section>
+        <section>
+            <b>Total</b>
+            <button id="btn" onclick="ball()">Calculate Total</button>
+        </section>
+            <span>
+                <input type="checkbox" name="" id="bb">Basketball
+            </span>
+        <section>
+            <input type="number" name="" id="qty1" oninput="girl()">
+        </section>
+        <section>
+            <input type="number" name="" id="price1" disabled>
+        </section>
+        <section>
+            <input type="number" name="" id="cost1" disabled>
+        </section>
+        <section>
+            <center>
+                <div id="rs"></div>
+            </center>
+        </section>
+    </div>
+
+
+
+
+    <script>
+        var result = 0;
+        var ft = document.getElementById('ft')
+        var qty = document.getElementById('qty')
+        var Price = document.getElementById('pr')
+        var cost = document.getElementById('ct')
+
+        var bb = document.getElementById('bb')
+        var qty1 = document.getElementById('qty1')
+        var Price1 = document.getElementById('price1')
+        var cost1 = document.getElementById('cost1')
+
+        var btn = document.getElementById('btn')
+        var rs = document.getElementById('rs')
+
+        ft.addEventListener ("click", ()=>{
+            if (ft.checked) {
+                price.value = 2000
+            } else {
+                price.value = "q"
+            }
+        })
+        let obi =()=> {
+            cost.value = qty.value * price.value
+        }
+
+        bb.addEventListener ("click", ()=>{
+            if (ft.checked) {
+                price1.value = 3000
+            } else {
+                price1.value = ""
+            }
+        })
+
+        let girl =()=> {
+            cost1.value = qty1.value * price1.value
+        }
+
+        let ball =()=> {
+            result = Number(cost.value) + Number(cost1.value)
+            rs.textContent = result;
+        }
+
+    </script>
+    
+</body>
+</html>

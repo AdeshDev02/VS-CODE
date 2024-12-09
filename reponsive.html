@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .boxx{
+            height: 250px;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 15px;
+            margin-bottom: 10px;
+            /* background-color: rebeccapurple; */
+        }
+        .b1{
+            background-color: green;
+        }
+        .Box{
+            height: 300px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            padding-inline: 15px;
+            margin-bottom: 7px;
+            /* background-color: aqua; */
+            gap: 15px;
+        }
+        .fot{
+            height: 300px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* background-color: coral; */
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        .b2{
+            background-color: gold;
+        }
+        .b11{
+            background-color: chartreuse;
+        }
+        
+
+
+        @media screen and (min-width:820px) {
+            .boxx{
+                grid-template-columns: repeat(3,1fr);
+            }
+            .Box{
+                grid-template-columns: repeat(2,1fr);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <main class="boxx">
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+    </main>
+    <aside class="Box">
+        <div class="b2"></div>
+        <div class="b2"></div>
+        <div class="b2"></div>
+        <div class="b2"></div>
+    </aside>
+    <main class="fot">
+        <div class="b11"></div>
+        <div class="b11"></div>
+    </main>
+</body>
+</html>

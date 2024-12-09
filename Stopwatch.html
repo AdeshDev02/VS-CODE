@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tt{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #cl{
+            justify-content: space-between;
+            width: 150px;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="tt"> 00 : 00 : 00</h1>
+    <center>
+        <div id="cl">
+            <button id="st" onclick="bb()">Stop</button>
+            <button id="pl" onclick="ab()">Play</button>
+            <button id="rs" onclick="cc()">Reset</button>
+
+        </div>
+    </center>
+
+    <script>
+        var time = document.getElementById("tt")
+
+        let [hour,min,sec] = [0, 0, 0];
+        var ss =""
+
+        var newsec = sec < 10 ? "0" + sec : sec;
+        var newmin = min < 10 ? "0" + min : min;
+        var newhour = hour < 10 ? "0" + hour : hour
+
+        time.innerHTML = newhour+ ":" + newmin+ ":" + newsec
+
+        function ab() {
+            ss = setInterval(function () {
+                sec++
+
+                if (sec == 59) {
+                    sec = 0
+                    min++
+                } 
+                if (min == 59) {
+                    hour++
+                }
+                
+                var newsec = sec < 10 ? "0" + sec : sec;
+                var newmin = min < 10 ? "0" + min : min;
+                var newhour = hour < 10 ? "0" + hour : hour;
+
+                time.innerHTML = newhour+ ":" + newmin+ ":" + newsec
+            }, 100)
+        }
+        function bb() {
+            clearInterval(ss)
+        }
+        function cc() {
+            clearInterval(ss)
+            let [hour, min, sec] = [0, 0, 0];
+            time.innerHTML = "00:00:00"
+        }
+    </script>
+</body>
+</html>

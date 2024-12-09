@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 5px;
+            padding: 5px;
+            background-color: gold;
+        }
+        #Box{
+            height: 100vh auto;
+            width: 50vh;
+            background-color: white;
+            display: flex;
+            /* justify-content: center;
+            justify-items: center; */
+            flex-direction: column;
+        }
+        #rs{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <center>
+            <!-- <h2 class="lasu">LAGOS STATE UNIVERSITY</h2> -->
+        </center>
+    </div>
+
+    <!-- <div>
+        <p id="jj"></p>
+    </div>
+
+    <div id="pp">
+
+    </div> -->
+<div id="Box">
+    <section>
+        <small>Number1</small>
+        <input type="text" name="" id="n1">
+    </section>
+    <br>
+    <section>
+        <small>Number2</small>
+        <input type="text" name="" id="n2">
+    </section>
+    <br>
+    <section>
+        <button id="plus">+</button>
+        <button id="minus">-</button>
+        <button id="multiplication">*</button>
+        <button id="division">/</button>
+    </section>
+    <div>
+        <p>
+            <b>Result</b> <span id="rs"></span>
+        </p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var result = 0;
+
+var n1 = document.getElementById('n1');
+
+var n2 = document.getElementById('n2');
+
+var rs = document.getElementById('rs')
+
+var plus = document.getElementById('plus');
+var minus = document.getElementById('minus');
+var multiplication = document.getElementById('multiplication');
+var division = document.getElementById('division');
+
+plus.addEventListener('click', function (){
+
+    result = Number(n1.value) + Number(n2.value);
+
+    rs.textContent = result;
+
+})
+
+minus.addEventListener('click', function (){
+
+result = Number(n1.value) - Number(n2.value);
+
+rs.textContent = result;
+
+})
+
+multiplication.addEventListener('click', function (){
+
+result = Number(n1.value) * Number(n2.value);
+
+rs.textContent = result;
+
+})
+
+division.addEventListener('click', function (){
+
+result = Number(n1.value) / Number(n2.value);
+
+rs.textContent = result;
+
+})
+    // document.getElementById('jj').innerHTML = "<strong>This is pass from Javascript</strong>";
+
+    // document.getElementById('pp').textContent = "<strong>This is pass from javascript</strong>";
+</script>
+
+
+
+
+
+</body>
+</html>

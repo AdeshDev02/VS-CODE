@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="SignInForm.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="form">
+            <h1>Login In</h1>
+            <form>
+                <input type="text" placeholder="Username" id="user">
+                <input type="password" placeholder="Password" id="psswd">
+                <button type="submit" id="sub">Submit</button>
+                <div class="Forget-Signup">
+                    <a href="#" id="fgp">Forgot password</a>
+                    <a href="#" id="sin">SIGN UP</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <main id="box">
+        <div id="box1">
+            <input type="text" placeholder="Surname" id="surn" class="all">
+            <input type="text" placeholder="Firstname" id="fs" class="all">
+            <input type="text" placeholder="Othername" id="oN" class="all">
+            <input type="email" placeholder="example@gmail"  name="" id="ema" class="all">
+            <input type="text" placeholder="Date of Birth" id="dob" class="all">
+            <select name="state" id="stat" onchange="ab()">
+                <option value="">Select your state</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Ogun">Ogun</option>
+            </select>
+            <select name="state" id="lga">
+                <option value="">Ojo</option>
+                <option value="">Ikeja</option>
+                <option value="">Apapa</option>
+            </select>
+            <select name="state" id="lgaa">
+                <option value="">Igbesa</option>
+                <option value="">Iteku</option>
+                <option value="">Oto</option>
+            </select>
+        </div>
+    </main>
+
+    <script src="SignIForm.js"></script>
+</body>
+</html>

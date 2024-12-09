@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff8cd;
+        }
+        .container{
+            display: flex;
+            width: 80vh;
+            font-family: "Roboto", sans-serif;
+            gap: 10px;
+        }
+        .panel{
+            flex: 0.5;
+            height: 50vh;
+            border-radius: 25px;
+            color: #fff8cd;
+            cursor: pointer;
+            position: relative;
+            transition: all .7s cubic-bezier(.47,1.64,.41,.8);
+        }
+        h3{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 24px;
+            margin: 0;
+            opacity: 0;
+        }
+        .panel.active{
+            flex: 3;
+
+            & h3 {
+                opacity: 1;
+                transition: opacity .3s ease-in;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="panel active" style="background-color: gold;"><h3>Gold</h3></div>
+        <div class="panel active" style="background-color: purple;"><h3>purple</h3></div>
+        <div class="panel active" style="background-color: rgb(81, 255, 0);"><h3>Green</h3></div>
+        <div class="panel active" style="background-color: rgb(255, 0, 157);"><h3>Pink</h3></div>
+    </div>
+
+
+
+
+    <script>
+        const $panels = document.querySelectorAll('.panel')
+        $panels.forEach(($panel)=>{
+            $panel.addEventListener(
+                'click', () => {
+                    removeActiveClasses();
+                    $panel.classList.add('active');
+                },
+            );
+        });
+
+        function removeActiveClasses() {
+            $panels.forEach(($panel) => {
+                $panel.classList.remove('active');
+            });
+        }
+    </script>
+</body>
+</html> 

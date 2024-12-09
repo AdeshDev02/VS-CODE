@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            height: 10px;
+            width: 150px;
+            background-color: grey;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        .child{
+            height: inherit;
+            border-radius: inherit;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <input type="password" id="inp" oninput="ab()">
+    <button id="btn">show</button>
+
+    <div class="wrap">
+        <div class="child"></div>
+    </div>
+
+
+
+    <script>
+
+        var inp = document.getElementById('inp');
+        var btn = document.querySelector('#btn')
+        var child = document.querySelector('.child')
+
+        btn.addEventListener('click' , function () {
+            if (inp.type == "password") {
+                inp.type = "text"
+                btn.innerHTML = "show"
+            } else {
+                inp.type = "password"
+                btn.innerHTML = "hide"
+
+            }
+        })
+
+        function ab() {
+            if (inp.value.length < 4) {
+                child.style.width = "30%"
+                child.style.backgroundColor = "red"
+            }else if(inp.value.length > 4 && inp.value.length <= 7){
+                child.style.width = "65%"
+                child.style.backgroundColor = "yellow"
+            }else if(inp.value.length > 7){
+                child.style.width = "100%"
+                child.style.backgroundColor = "green"
+            }
+        }
+
+
+    </script>
+
+
+</body>
+</html>

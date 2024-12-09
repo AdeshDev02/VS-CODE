@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NAV CLASS</title>
+    <style>
+        *{
+	margin: 0;
+	padding: 0;
+}
+header{
+	height: 90px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: gold;
+}
+.ull{
+	display: flex;
+	list-style: none;
+	gap: 100px;
+}
+.ull > li >a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+.Subnav{
+	min-height: 200px;
+	width: 150px;
+	position: absolute;
+	margin-left: -50px;
+	padding-top: 10px;
+	visibility: hidden;
+}
+.oll{
+	list-style: none;
+	line-height: 50px;
+	text-align: center;
+	border: 5px double black;
+}
+.oll > li{
+	border: 2px dotted black;
+}
+.oll > li >a{
+	text-decoration: none;
+	color: rgb(124, 59, 59);
+	font-size: 20px;
+	font-family: sans-serif;
+}
+.hh:hover .Subnav{
+	visibility: visible ;
+}
+.oll > li:hover{
+	background-color: black;
+	color: white;
+}
+.oll > li:hover a{
+	color: white;
+}
+.Subnap{
+	min-height: 200px;
+	width: 130px;
+	position: absolute;
+	margin-left: -50px;
+	padding-top: 20px;
+	display: none;
+}
+.pll{
+	list-style: none;
+	line-height: 50px;
+	text-align: center;
+	border: 5px double black;
+}
+.pll > li{
+	border: 2px dotted black;
+}
+.mm:hover .Subnap{
+	display: block;
+}
+.pll > li:hover a{
+	color: white;
+}
+.pll > li:hover{
+	background-color: gold;
+	color: white;
+}
+.Subdav{
+	min-height: 200px;
+	width: 150px;
+	position: absolute;
+	margin-left: -50px;
+	padding-top: 20px;
+	display: none;
+}
+.giv{
+	list-style: none;
+	line-height: 110px;
+	text-align: center;
+}
+.go:hover .Subdav{
+	display: block;
+}
+.giv > li:hover{
+	background-color: green;
+	color: white;
+}
+.Sub{
+	min-height: 200px;
+	width: 130px;
+	position: absolute;
+	margin-left: -50px;
+	padding-top: 20px;
+	display: none;
+}
+.off{
+	list-style: none;
+	line-height: 50px;
+	text-align: center;
+	border: 5px double black;
+}
+.off > li{
+	border: 2px dotted black;
+}
+.off > li >a{
+	text-decoration: none;
+	color: rgb(124, 59, 59);
+	font-size: 20px;
+	font-family: sans-serif;
+}
+.off > li:hover{
+	background-color: grey;
+	color: white;
+}
+.no:hover .Sub{
+	display: block;
+}
+.off > li:hover a{
+	color: white;
+}
+.tu{
+	height: 60px;
+	width: 150px;
+	margin-top: -33px;
+	border-style: dotted;
+	border-color: black;
+	border-radius: 10px;
+	background-color:purple;
+	position: absolute;
+	margin-left: 140px;
+	display: none;
+}
+.ft:hover .tu{
+	display: block;
+}
+a{
+	text-decoration: none;
+	font-size: 2rem;
+	font-family: sans-serif;
+}
+.my{
+	height: 60px;
+	width: 150px;
+	margin-top: -33px;
+	border-style: dotted;
+	border-color: black;
+	border-radius: 10px;
+	background-color:gold;
+	position: absolute;
+	margin-left: 140px;
+	display: none;
+}
+.by:hover .my{
+	display: block;
+}
+.if{
+	height: 60px;
+	width: 150px;
+	margin-top: -33px;
+	border-style: dotted;
+	border-color: black;
+	border-radius: 10px;
+	background-color:violet;
+	position: absolute;
+	margin-left: 140px;
+	display: none;
+}
+.na:hover .if{
+	display: block;
+}
+.fo{
+	height: 60px;
+	width: 150px;
+	margin-top: -33px;
+/*	border-width: 2rem;*/
+	border-style: dotted;
+	border-color: black;
+	border-radius: 10px;
+	background-color:gold;
+	position: absolute;
+	margin-left: 140px;
+	display: none;
+}
+.vc:hover .fo{
+	display: block;
+}
+    </style>
+</head>
+<body>
+
+	<header>
+		<main class="BITBASE">
+			<h1>BITXBASE</h1>
+		</main>
+		<nav>
+			<ul class="ull">
+				<li class="hh"><a href="#">Home</a>
+					<div class="Subnav">
+						<ol class="oll">
+							<li class="ft"><a href="#">Product</a>
+								<div class="tu">
+									<a href="#">Food</a>
+								</div>
+							</li>
+							<li class="by"><a href="#">Electronic</a>
+								<aside class="my">
+									<a href="#">Kettle</a>
+								</aside>
+							</li>
+							<li class="na"><a href="#">Fashion</a>
+								<aside class="if">
+									<a href="#">Style</a>
+								</aside>
+							</li>
+							<li class="vc"><a href="#">Cars</a>
+								<nav class="fo">
+									<a href="#">Lexus</a>
+								</nav>
+							</li>
+
+							
+						</ol>
+					</div>
+				</li>
+				<li class="mm"><a href="#">About</a>
+
+					<div class="Subnap">
+						<ol class="pll">
+							<li><a href="#"><img src="pics.jpg" height="100px" width="100px"></a></li>
+							<li><a href="#"><img src="pics.png" height="100px" width="100px"></a></li>
+							<li><a href="#"><img src="pic.png" height="100px" width="100px"> </a></li>
+							<li><a href="#"><img src="piv.jpg" height="100px" width="100px"></a></li>
+						</ol>
+					</div>
+							
+				</li>
+				<li class="go"><a href="#">Contact</a>
+
+					<aside class="Subdav">
+						<ol class="giv">
+							<li><a href="#"><img src="pics.png" height="150px" width="150px"></a></li>
+						</ol>
+					</aside>
+
+				</li>
+				<li class="no"><a href="#">Help</a>
+
+					<div class="Sub">
+						<ol class="off">
+							<li><a href="#">Sale</a></li>
+							<li><a href="#">Order</a></li>
+							<li><a href="#">Receipt</a></li>
+							<li><a href="#">Mail</a></li>
+						</ol>
+					</div>
+
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+</body>
+</html>

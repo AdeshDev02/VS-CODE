@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #LGA{
+            display: none;
+            margin-left: 750px;
+            margin-top: -20px;
+        }
+        #LGAA{
+            display: none;
+            margin-left: 750px;
+            margin-top: -20px;
+        }
+        #LGAAA{
+            display: none;
+            margin-left: 750px;
+            margin-top: -20px;
+        }
+        #LGAAAA{
+            display: none;
+            margin-left: 750px;
+            margin-top: -20px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <center>
+        <select name="State" id="Stater" onchange="ab()">
+            <option value="">Select a State</option>
+            <option value="Lagos">Lagos</option>
+            <option value="Abia">Abia</option>
+            <option value="Ogun">Ogun</option>
+            <option value="Delta">Delta</option>
+            <option value="Anambra">Anambra</option>
+            <option value="Kastina">Kastina</option>
+        </select>
+    </center>
+        <select name="state" id="LGA">
+            <option value="Apapa">Apapa</option>
+            <option value="Ikeja">Ikeja</option>
+            <option value="Ojo">Ojo</option>
+        </select>
+        <select name="state" id="LGAA">
+            <option value="Arochukwu">Arochukwu</option>
+            <option value="Otutu Oma">Otutu Oma</option>
+            <option value="Umunwa">Umunwa</option>
+        </select>
+        <select name="state" id="LGAAA">
+            <option value="Ado-ota">Ado-ota</option>
+            <option value="Igbesa">Igbesa</option>
+            <option value="Ipokia">Ipokia</option>
+        </select>
+        <select name="state" id="LGAAAA">
+            <option value="Nnewi">Nnewi</option>
+            <option value="Kebbi">Kebbi</option>
+            <option value="Kano">Kano</option>
+        </select>
+
+
+
+
+
+
+      <script>
+            var ss = document.getElementById('Stater')
+
+
+            function ab() {
+                if (ss.value == "Lagos") {
+                    LGA.style.display = "block"
+                    LGAA.style.display = "none"
+
+                } else if(ss.value == "Abia") {
+                    LGA.style.display = "none"
+                    LGAA.style.display = "block"
+                }
+                if (ss.value == "Ogun") {
+                    LGAAA.style.display = "none"
+                    LGAAAA.style.display = "block"
+
+                } else if(ss.value =="Delta") {
+                    LGAAA.style.display = "block"
+                    LGAAAA.style.display = "none"
+                }
+            }
+
+      </script>  
+
+</body>
+</html>

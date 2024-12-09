@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        
+        #Box{
+            height: 100px;
+            width: 15%;
+            background-color: blueviolet;
+            margin-top: 20px;
+            color: white;
+            border-radius: 20px;
+        }
+        .Gay{
+            animation-name: Gay;
+            animation-duration: 9s;
+            animation-direction: alternate;
+        }
+        #btn{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(41, 4, 77);
+            margin-top: 20px;
+            color: white;
+            border-radius: 10px;
+        }
+        @keyframes Gay{
+	        25%{
+		        transform: translateX(900px);
+		        background-color: purple;
+	        }
+            50%{
+                transform: translateY(300px) translateX(900px);
+                background-color:magenta;
+            }
+            75%{
+                transform:translateY(300px)
+            }
+        }
+    </style>
+</head>
+<body>
+    <button id="btn" onclick="ab()">start</button>
+    <div id="Box"></div>
+
+
+    <script>
+        var an = document.getElementById('Box')
+
+        function ab() {
+            an.classList.toggle("Gay")
+        }
+    
+    </script>
+</body>
+</html>

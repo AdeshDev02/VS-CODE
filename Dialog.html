@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-family: sans-serif;
+        }
+        .button{
+            padding: 10px;
+            background: #fafafa;
+            border: 2px solid cornflowerblue;
+            font-size: 16px;
+            font-weight: bold;
+            color: cornflowerblue;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: purple;
+            color: #fcb902;
+        }
+        .dialog{
+            min-height: 400px;
+            padding: 25px;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px 0 #0000001a;
+            background: #fafafa;
+            animation: dialogSlide 0.3s;
+        }
+        .dialog::backdrop{
+            background: rgb(0, 0, 0, 0.7);
+            animation: dialogBackdropFade 0.2s;
+        }
+        @keyframes dialogSlide {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+        }
+        @keyframes dialogBackdropFade {
+            from {
+                background: #00000000;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>HTML 5.2 Dialog Demo</h1>
+    <button type="button" class="button Open-button">Open Dialog</button>
+
+    <dialog class="dialog">
+        <h2>Dialog heading</h2>
+        <p>This is the native dialog.</p>
+        <button type="button" class="button close-button">close button</button>
+    </dialog>
+
+</body>
+</html>
